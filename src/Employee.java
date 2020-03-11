@@ -1,61 +1,51 @@
 public class Employee {
     //attributes
-    private int empid;
-    private String Name;
-    private String Position;
-    private double Salary;
+    private int empID;
+    private String name;
+    private String position;
+    private double salary;
     //constructor
-
-    public Employee(int empid, String name, String position, double salary) {
-        this.empid = empid;
-        Name = name;
-        Position = position;
-        Salary = salary;
+    public Employee(int empID, String name, String position, double salary) {
+        this.empID = empID;
+        this.name = name;
+        this.position = position;
+        this.salary = salary;
     }
-
     //getter and setter
-
-    public static int getEmpid() {
-        return empid;
+    public int getEmpID() {
+        return empID;
     }
 
-    public void setEmpid(int empid) {
-        this.empid = empid;
+    public String getName() {
+        return name;
     }
 
-    public static String getName() {
-        return Name;
+    public String getPosition() {
+        return position;
     }
 
-    public void setName(String name) {
-        Name = name;
+    public double getSalary() {
+        return salary;
     }
-
-    public static String getPosition() {
-        return Position;
-    }
-
-    public void setPosition(String position) {
-        Position = position;
-    }
-
-    public static double getSalary() {
-        return Salary;
-    }
-
     public void setSalary(double salary) {
-        Salary = salary;
+        this.salary = salary;
     }
-
     //toString
-
     @Override
     public String toString() {
         return "Employee{" +
-                "empid=" + empid +
-                ", Name='" + Name + '\'' +
-                ", Position='" + Position + '\'' +
-                ", Salary=" + Salary +
+                "empID=" + empID +
+                ", name='" + name + '\'' +
+                ", position='" + position + '\'' +
+                ", salary=" + salary +
                 '}';
+    }
+
+    public int getEmpid() {
+        return empID;
+    }
+
+    public void setEmpid(int empid) {
+        this.empID = empid;
     }
 }
